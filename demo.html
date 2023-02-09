@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(36, 35, 35);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+
+            align-items: center;
+        }
+
+        div {
+            margin-top: 5%;
+            font-size: 5ch;
+        }
+
+        button {
+            margin-left: 80%;
+            font-size: 2ch;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        table {
+            margin-top: 20px;
+            width: 25%;
+            font-size: 2.5ch;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <label for="">Registration Form</label>
+    </div>
+    <br>
+
+    <table>
+
+        <form>
+            <tr>
+                <td><label for="fname">First Name : </label></td>
+                <td><input type="text" id="fname" required></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name : </label> </td>
+                <td><input type="text" id="lname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phno">Contact Number</label></td>
+                <td><input type="text" id="phno" required></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input type="number" id="age" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><textarea name="address" id="add"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td><input type="radio" id="male" name="gender" required>Male
+                    <input type="radio" id="female" name="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="lan">Languages</label></td>
+                <td><input type="checkbox" id="eng" name="eng">
+                    <label for="eng">English</label>
+                    <br>
+                    <input type="checkbox" id="hin" name="hin">
+                    <label for="hin">Hindi</label>
+                    <br>
+                    <input type="checkbox" id="guj" name="guj">
+                    <label for="guj">Gujrati</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="country">Choose a Country</label>
+                <td>
+                    <select name="country" id="country" required>
+                        <option value="" disabled>--select--</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">CANADA</option>
+                    </select>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td><br><br></td>
+            </tr>
+            <tr>
+                <td> <button type="submit">Submit</button>
+                </td>
+            </tr>
+
+
+        </form>
+    </table>
+</body>
+
+</html>
